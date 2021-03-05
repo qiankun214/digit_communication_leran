@@ -1,0 +1,51 @@
+{
+    "name": "single_port_sram",
+    "port": {
+        "clk": [
+            "input",
+            "1",
+            "\u7cfb\u7edf\u65f6\u949f"
+        ],
+        "rst_n": [
+            "input",
+            "1",
+            "\u7cfb\u7edf\u590d\u4f4d\u4fe1\u53f7\uff0c\u4f4e\u6709\u6548"
+        ],
+        "address": [
+            "input",
+            "AWIDTH",
+            "\u5730\u5740\u6570\u636e"
+        ],
+        "write_req": [
+            "input",
+            "1",
+            "\u5199\u6709\u6548"
+        ],
+        "write_data": [
+            "input",
+            "DWIDTH",
+            "\u5199\u6570\u636e"
+        ],
+        "read_data": [
+            "output",
+            "DWIDTH",
+            "\u8bfb\u6570\u636e"
+        ]
+    },
+    "parameter": {
+        "DWIDTH": [
+            "8",
+            "\u8f93\u5165\u6570\u636e\u4f4d\u5bbd"
+        ],
+        "AWIDTH": [
+            "6",
+            "\u6570\u636e\u7a97\u53e3\u5730\u5740\u5bbd\u5ea6"
+        ]
+    },
+    "dependent": [],
+    "submodule": {},
+    "link": [],
+    "unlink": [],
+    "ds_path": "./rtl/single_port_sram.v",
+    "tb_path": "./testbench/tb_single_port_sram.sv"
+}

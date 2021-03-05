@@ -1,0 +1,93 @@
+{
+    "name": "parallel_fir",
+    "port": {
+        "clk": [
+            "input",
+            "1",
+            "\u7cfb\u7edf\u65f6\u949f"
+        ],
+        "rst_n": [
+            "input",
+            "1",
+            "\u7cfb\u7edf\u590d\u4f4d\u4fe1\u53f7\uff0c\u4f4e\u6709\u6548"
+        ],
+        "cfg_valid": [
+            "input",
+            "1",
+            "\u914d\u7f6e\u6570\u636e\u6709\u6548\u4fe1\u53f7"
+        ],
+        "cfg_busy": [
+            "output reg",
+            "1",
+            "\u914d\u7f6e\u4fe1\u606f\u5fd9"
+        ],
+        "cfg_addr": [
+            "input",
+            "AWIDTH",
+            "\u914d\u7f6e\u6570\u5730\u5740\u4fe1\u606f"
+        ],
+        "cfg_data": [
+            "input",
+            "DWIDTH",
+            "\u914d\u7f6e\u6570\u636e"
+        ],
+        "fir_din_valid": [
+            "input",
+            "1",
+            "\u8f93\u5165\u6570\u636e\u6709\u6548\u4fe1\u53f7"
+        ],
+        "fir_din_busy": [
+            "output reg",
+            "1",
+            "\u8f93\u5165\u6570\u636e\u5fd9\u4fe1\u53f7"
+        ],
+        "fir_din_data": [
+            "input",
+            "DWIDTH",
+            "\u8f93\u5165\u6570\u636e"
+        ],
+        "fir_dout_valid": [
+            "output",
+            "1",
+            "\u8f93\u51fa\u6570\u636e\u6709\u6548\u4fe1\u53f7"
+        ],
+        "fir_dout_busy": [
+            "input",
+            "1",
+            "\u8f93\u51fa\u6570\u636e\u5fd9\u4fe1\u53f7"
+        ],
+        "fir_dout_data": [
+            "output",
+            "OWIDTH",
+            "\u8f93\u51fa\u6570\u636e"
+        ]
+    },
+    "parameter": {
+        "DWIDTH": [
+            "8",
+            "\u8f93\u5165\u6570\u636e\u4f4d\u5bbd"
+        ],
+        "AWIDTH": [
+            "6",
+            "\u6570\u636e\u7a97\u53e3\u5730\u5740\u5bbd\u5ea6"
+        ],
+        "WINLEN": [
+            "64",
+            "\u6570\u636e\u7a97\u53e3\u957f\u5ea6"
+        ],
+        "OWIDTH": [
+            "22",
+            "\u8f93\u51fa\u6570\u636e\u4f4d\u5bbd"
+        ],
+        "OSTART": [
+            "0",
+            "\u5f00\u59cb\u622a\u53d6\u8f93\u51fa\u7684\u4f4d\u6570"
+        ]
+    },
+    "dependent": [],
+    "submodule": {},
+    "link": [],
+    "unlink": [],
+    "ds_path": "./rtl/parallel_fir.v",
+    "tb_path": "./testbench/tb_parallel_fir.sv"
+}
